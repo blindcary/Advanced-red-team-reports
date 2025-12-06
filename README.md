@@ -1,4 +1,4 @@
-# ðAdvanced Red Team Portfolio: OWASP Juice Shop Engagements
+# Advanced Red Team Portfolio: OWASP Juice Shop Engagements
 
 This repository documents findings from simulated Red Team engagements targeting the **OWASP Juice Shop**, a modern, intentionally vulnerable web application.
 
