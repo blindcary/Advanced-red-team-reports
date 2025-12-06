@@ -1,9 +1,9 @@
-# 📂 ADVANCED 01: Sensitive Data Exposure (Open FTP)
+# ADVANCED 01: Sensitive Data Exposure (Open FTP)
 
-## 🎯 Goal
+## Goal
 Enumerate hidden directories and exploit improper access controls to retrieve internal documentation and identify critical security assets on the OWASP Juice Shop.
 
-## 🛠️ Methodology
+## Methodology
 The attack utilized active enumeration to discover unlinked directories. While a strict file extension filter prevented downloading configuration backups directly (`.bak`), the access control flaw allowed the exfiltration of sensitive internal memos via allowed extensions (`.md`).
 
 ### Key Steps
@@ -13,7 +13,7 @@ The attack utilized active enumeration to discover unlinked directories. While a
 
 ---
 
-## 🔍 Key Findings
+## Key Findings
 
 ### 1. Critical Information Disclosure
 The directory listing reveals the location of the organization's password database and source code backups.
