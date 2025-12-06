@@ -18,12 +18,12 @@ The attack utilized active enumeration to discover unlinked directories. While a
 ### 1. Critical Information Disclosure
 The directory listing reveals the location of the organization's password database and source code backups.
 * **Critical Asset:** `incident-support.kdbx` (KeePass Database - High Value Target).
-![proof](Assets/advanced_01_01_proof.png)
+![proof](assets/advanced_01_01_proof.png)
 
 ### 2. Confidential Document Exfiltration
 Successfully accessed internal business documentation.
 * **Payload:** `/ftp/acquisitions.md`
 * **Impact:** Leakage of sensitive business strategy regarding planned acquisitions, marked "Confidential".
-![proof](Assets/advanced_01_02_proof.png)
+![proof](assets/advanced_01_02_proof.png)
 
 ---
