@@ -17,13 +17,14 @@ The attack utilized active enumeration to discover unlinked directories. While a
 
 ### 1. Critical Information Disclosure
 The directory listing reveals the location of the organization's password database and source code backups.
+* **Evidence (Gobuster):** ![Gobuster output showing the accessible /ftp directory](evidence/advanced_01_01_proof.png)
 * **Critical Asset:** `incident-support.kdbx` (KeePass Database - High Value Target).
-![proof](assets/advanced_01_01_proof.png)
+
 
 ### 2. Confidential Document Exfiltration
 Successfully accessed internal business documentation.
 * **Payload:** `/ftp/acquisitions.md`
+* **Evidence (Exfiltrated Content):** ![Browser display of the confidential acquisitions memo](evidence/advanced_01_02_proof.png)
 * **Impact:** Leakage of sensitive business strategy regarding planned acquisitions, marked "Confidential".
-![proof](assets/advanced_01_02_proof.png)
 
 ---
