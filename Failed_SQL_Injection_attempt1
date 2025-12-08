@@ -1,0 +1,27 @@
+# âBLOCKED EXPLOIT: SQL Injection Attempt (Tool/Network Obstruction)
+
+## ðGoal
+Bypass the application login using a classic SQL Injection payload (`' OR 1=1 --`) targeting the email parameter, aiming for a Broken Authentication (A07) finding.
+
+## ðMethodology and Obstacles
+The intended methodology involved intercepting the login API request using **Burp Suite** and modifying the JSON payload in the Repeater tab.
+
+### Key Obstacles Encountered
+1.  **Proxy Failure:** Burp Suite failed to consistently intercept the target `POST /rest/user/login` request, instead catching a high volume of background traffic.
+2.  **Connection Instability:** The local OWASP Juice Shop environment and the proxy chain experienced intermittent connection failures, leading to repeated resets and poor application responsiveness.
+3.  **Tool Dependency:** The complexity of setting up the proxy and handling the application's asynchronous background requests made successful manual exploitation in the Repeater tab impractical under current environmental constraints.
+
+---
+
+## ðConclusion and Pivot
+
+### Finding
+The SQL Injection attack was inconclusive due to technical and environmental failures, not application-level defense. The application's defenses against the payload could not be fully tested.
+
+### Action Taken
+The Red Team pivoted immediately to a tool-free, browser-based exploit (**Reflected XSS**) to maintain momentum and ensure learning objectives were met without further environmental delays.
+
+### Future Plan
+The SQL Injection challenge will be revisited when a dedicated, stable environment (e.g., a fresh container instance or a stable virtual machine) is available for effective use of proxy-based tools like Burp Suite.
+
+---
