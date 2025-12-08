@@ -33,3 +33,5 @@ The first completed exercise demonstrates successful Information Disclosure desp
 * **Proof:** Retrieved the confidential `acquisitions.md` document and identified the existence of `incident-support.kdbx` (a password database).
 
 ***
+## Failed Attempts
+1. [SQLi Obstacle Report](Failed_SQL_Injection_attempt1)
