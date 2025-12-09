@@ -1,9 +1,9 @@
-# ðADVANCED 03: Reflected XSS (DOM-Based)
+# ADVANCED 03: Reflected XSS (DOM-Based)
 
-## ðGoal
+## Goal
 Identify and exploit a **Cross-Site Scripting (XSS)** vulnerability in the search functionality to execute arbitrary JavaScript code in the user's browser.
 
-## ðMethodology
+## Methodology
 The attack was performed manually using the browser. The application reflects user input from the search bar directly into the DOM without proper sanitization.
 
 ### Key Steps
@@ -14,10 +14,11 @@ The attack was performed manually using the browser. The application reflects us
 
 ---
 
-## ðKey Findings
+## Key Findings
 
 ### 1. Lack of Input Sanitization
 The application fails to strip dangerous HTML tags from the search query before displaying it to the user.
+![proof](evidence/XSS.png)
 
 ### 2. Impact
 * **Severity:** High
