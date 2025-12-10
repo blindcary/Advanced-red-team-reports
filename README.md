@@ -21,7 +21,7 @@ The exercises focus on the **OWASP Top 10** categories and adhere to standard pe
 | **ADVANCED_01...** | A01: Broken Access Control / Sensitive Data Exposure | High | Discovered hidden directories and exfiltrated confidential internal documents.[link](ADVANCED_01_Sensitive_Data_Exposure.md) |
 | **ADVANCED_02...** | A07: Identification and Authentication Failures | Critical | Bypassed administrator login via targeted SQL Injection payload executed via browser console.[link](ADVANCED_02_SQL_Injection.md)|
 | **ADVANCED_03...** | A03: Injection (XSS) | High | Successfully injected JavaScript into the search function via a reflected payload.[link](ADVANCED_03_XSS_DOM.md) |
-| **ADVANCED_04...** | A01: Broken Access Control | High | *Pending: Admin Panel Access* |
+| **ADVANCED_04...** | A01: Broken Access Control | High | Bypassed client-side access controls via JWT manipulation to access the Admin Panel.[link](ADVACED_04_BAC_Token_Manipulation.md) |
 
 ---
 
