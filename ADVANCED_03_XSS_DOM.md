@@ -30,7 +30,7 @@ To prove a more sophisticated attack, a second payload was executed that avoided
 
 * **Payload Used:** `<a href="javascript:alert('DOM XSS')">CLICK ME FOR A PRIZE</a>`
 * **Result:** The payload successfully rendered as a link on the search results page, and the malicious JavaScript only executed upon user click.
-![proof](evidence/XSS 3.png)
+![proof](evidence/xss.png)
 * **Significance:** Proves the ability to craft evasive payloads and control the timing of script execution.
 
 ---
