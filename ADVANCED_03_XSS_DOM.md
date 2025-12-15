@@ -24,4 +24,13 @@ The application fails to strip dangerous HTML tags from the search query before 
 * **Severity:** High
 * **Risk:** An attacker could craft a malicious link containing this payload. If a victim clicks it, the attacker could steal session cookies (Account Takeover), redirect the user to a phishing site, or perform actions on their behalf.
 
+### 3. Bonus Finding: Click-Triggered XSS (Evasion)
+
+To prove a more sophisticated attack, a second payload was executed that avoided immediate execution and required user interaction (a click) to fire. This simulates a successful phishing or social engineering attack.
+
+* **Payload Used:** `<a href="javascript:alert('DOM XSS')">CLICK ME FOR A PRIZE</a>`
+* **Result:** The payload successfully rendered as a link on the search results page, and the malicious JavaScript only executed upon user click.
+![proof](evidence/XSS 3.png)
+* **Significance:** Proves the ability to craft evasive payloads and control the timing of script execution.
+
 ---
