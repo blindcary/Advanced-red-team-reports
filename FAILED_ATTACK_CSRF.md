@@ -1,0 +1,1 @@
+Technical Pivot: > Observed rejection of text/plain disguised as JSON. Next phase involves inspecting the API for header-based authentication requirements (JWT) and verifying if the SameSite cookie attribute is bypassed when using top-level navigation.
