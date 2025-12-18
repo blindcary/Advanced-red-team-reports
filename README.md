@@ -36,3 +36,4 @@ The first completed exercise demonstrates successful Information Disclosure desp
 ***
 ## Failed Attempts
 1. [SQLi Obstacle Report](Failed_SQL_Injection_attempt1)
+2. [Failed Exploit Iterations and Defense Detection](failed-exploit-attempt.md)
