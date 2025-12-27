@@ -22,7 +22,7 @@ The exercises focus on the **OWASP Top 10** categories and adhere to standard pe
 | **ADVANCED_02...** | A07: Identification and Authentication Failures | Critical | Bypassed administrator login via targeted SQL Injection payload executed via browser console.[link](ADVANCED_02_SQL_Injection.md)|
 | **ADVANCED_03...** | A03: Injection (XSS) | High | Successfully injected JavaScript into the search function via a reflected payload.Executed persistent and click-triggered DOM XSS payloads in the search function.[link](ADVANCED_03_XSS_DOM.md) |
 | **ADVANCED_04...** | A01: Broken Access Control | High | Bypassed client-side access controls via JWT manipulation to access the Admin Panel.[link](ADVACED_04_BAC_Token_Manipulation.md) |
-| **ADVANCED_O5...** | A01: Broken Access Control / IDOR | High | Successfully viewed other users' baskets by manipulating the API request ID[link](ADVANCED_05_IDOR_Basket_Access.md) |
+| **ADVANCED_O5...** | A01: Broken Access Control / IDOR | High | Successfully viewed other users' baskets by manipulating the API request ID.[link](ADVANCED_05_IDOR_Basket_Access.md) |
 
 ---
 
